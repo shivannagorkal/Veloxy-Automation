@@ -30,39 +30,129 @@ export default function Home() {
         <h1>Veloxy Automation</h1>
         <div className="nav-links">
           <a href="#hero">Home</a>
-          <a href="#services">Services</a>
-          <a href="#projects">Projects</a>
+          <a href="#Features">Features</a>
+          <a href="#Applications">Applications</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
 
       {/* HERO */}
       <section id="hero" className="hero reveal">
-        <h2>Automation that works while you sleep</h2>
+        <div className="text">
+        <h2 className="heading"> Automation you can{" "} <span className="gradient-text">visually build</span> {" "} and scale</h2>
         <p>
-          We build intelligent automation systems that eliminate manual work
-          and help businesses scale faster.
+          Build intelligent workflows and AI automation without complexity.
+          Faster execution, better control, real results.
         </p>
-        <button>Get Started</button>
+        <div className="hero-buttons">
+          <button className="primary-btn">
+            Get started free →
+          </button>
+
+          <button className="secondary-btn">
+            ▶ Watch demo
+          </button>
+        </div>
+        </div>
+        {/* Visual Preview */} 
+        <div className="hero-preview">
+          <div className="preview-window">
+            <div className="window-dots">
+              <span className="dot dot1"></span><span className="dot dot2"></span><span className="dot dot3"></span>
+            </div>
+        
+            <div className="preview-canvas">
+              <div className="node green">Trigger</div>
+              <div className="node purple">AI</div>
+              <div className="node blue">Logic</div>
+              <div className="node pink">Action</div>
+            </div>
+            
+          </div>
+             
+        
+          <div className="floating-badge">✨ No code required</div>
+        </div>
+
       </section>
 
-      {/* SERVICES */}
-      <section id="services" className="section reveal">
-        <h3>Our Services</h3>
+      {/* FEATURES */}
+      <section id="Features" className="section reveal">
+        <h3 className="header">Features</h3>
+        <h2 className="heading">Create anything.<span className="gradient-text"> Orchestrate everything.</span></h2>
+        <p>From simple workflows to managing AI and automation systems across your entire business.</p>
         <div className="cards">
-          <div className="card">Business Process Automation</div>
-          <div className="card">AI Workflow Integration</div>
-          <div className="card">Custom Software Solutions</div>
+          <div className="card">
+            <h4>Build fast, be first</h4>
+            <p>Whatever you want to automate, get moving instantly. Visually design solutions without code to save time.</p>
+          </div>
+          <div className="card">
+            <h4>AI-Powered Intelligence</h4>
+            <p>Plug in AI apps for smarter automations. Let machine learning optimize your workflows automatically.</p>
+          </div>
+          <div className="card">
+            <h4>Enterprise Security</h4>
+            <p>Built-in GDPR and SOC 2 Type II compliance, encryption, and SSO to keep your data secure.</p>
+          </div>
+          <div className="card">
+            <h4>Lightning Fast</h4>
+            <p>Execute thousands of operations per second with our optimized infrastructure and smart caching.</p>
+          </div>
+          <div className="card">
+            <h4>Scalable Architecture</h4>
+            <p>From simple workflows to complex enterprise systems, scale seamlessly as your needs grow.</p>
+          </div>
+          <div className="card">
+            <h4>3,000+ Integrations</h4>
+            <p>Connect your entire tech stack with our massive library of pre-built apps and custom integrations.</p>
+          </div>
+          
         </div>
       </section>
 
-      {/* PROJECTS */}
-      <section id="projects" className="section reveal">
-        <h3>Projects</h3>
-        <div className="cards">
-          <div className="card">CRM Automation System</div>
-          <div className="card">Lead Management Bot</div>
-          <div className="card">Internal Workflow Dashboard</div>
+      {/* APPLICATIONS */}
+      <section id="Applications" className="reveal">
+        <h3 className="header">Applications</h3>
+        <h2 className="heading">3,000+ pre-built apps. <span>Limitless integration.</span></h2>
+        <p>Connect your entire tech stack instantly with our massive library of integrations.</p>
+
+        <div className="app-cards">
+          <div className="app-card">
+            <p>Open AI</p>
+          </div>
+          <div className="app-card">
+            <p>Slack</p>
+          </div>
+          <div className="app-card">
+            <p>Hubspot</p>
+          </div>
+          <div className="app-card">
+            <p>Salesforce</p>
+          </div>
+          <div className="app-card">
+            <p>Notion</p>
+          </div>
+          <div className="app-card">
+            <p>Gmail</p>
+          </div>
+          <div className="app-card">
+            <p>Whatsapp</p>
+          </div>
+          <div className="app-card">
+            <p>Instagram</p>
+          </div>
+          <div className="app-card">
+            <p>Strip</p>
+          </div>
+          <div className="app-card">
+            <p>Shopify</p>
+          </div>
+          <div className="app-card">
+            <p>Airtable</p>
+          </div>
+          <div className="app-card">
+            <p>Zoom</p>
+          </div>
         </div>
       </section>
 
