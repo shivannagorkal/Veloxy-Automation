@@ -1,127 +1,150 @@
-body {
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* -------- Base Reset & Variables -------- */
+:root {
+  --bg-1: linear-gradient(135deg, #0f172a 0%, #18191c 50%, #0f172a 100%);
+  --panel: rgba(11,16,32,0.6);
+  --text: #e6eef8;
+  --muted: #9aa6c1;
+  --primary: #6366f1;
+  --secondary: #ec4899;
+  --accent: #22c55e;
+  --glass: rgba(255,255,255,0.03);
+  --radius: 12px;
+}
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-}
-
 body {
-  background: linear-gradient(
-    180deg,
-    #ffffff 0%,
-    #f5f7ff 40%,
-    #fdf2f8 100%
-  );
-  color: #0f172a;
-}
-
-
-html {
-  scroll-behavior: smooth;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-
-  background:
-    radial-gradient(circle at 20% 20%, rgba(99,102,241,0.25), transparent 40%),
-    radial-gradient(circle at 80% 30%, rgba(236,72,153,0.25), transparent 40%),
-    radial-gradient(circle at 50% 80%, rgba(34,197,94,0.25), transparent 40%);
-
-  animation: floatBg 20s ease-in-out infinite;
-}
-
-@keyframes floatBg {
-  0%   { transform: translateY(0px); }
-  50%  { transform: translateY(-30px); }
-  100% { transform: translateY(0px); }
-}
-
-/* Reset and Base Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
-  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0f172a 100%);
-  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Inter', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  background: var(--bg-1);
+  color: var(--text);
   line-height: 1.6;
-  overflow-x: hidden;
   min-height: 100vh;
+  overflow-x: hidden;
   position: relative;
 }
 
-/* Animated Background Pattern */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Subtle animated background (single instance) */
 body::before {
   content: '';
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: 
-    radial-gradient(circle at 20% 50%, rgba(34, 211, 238, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 40% 20%, rgba(34, 211, 238, 0.05) 0%, transparent 50%);
-  animation: backgroundPulse 15s ease-in-out infinite;
-  pointer-events: none;
+  inset: 0;
   z-index: -1;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(99,102,241,0.06) 0%, transparent 40%),
+    radial-gradient(circle at 85% 30%, rgba(236,72,153,0.04) 0%, transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(34,197,94,0.03) 0%, transparent 40%);
+  animation: backgroundPulse 20s linear infinite;
 }
 
 @keyframes backgroundPulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.7; }
+  0%, 100% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(-15px); opacity: 0.85; }
 }
 
-/* Smooth Scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Container */
+/* Utilities: container, text helpers */
 .container {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
-/* Responsive Typography */
-h1 {
-  font-size: clamp(2rem, 5vw, 4rem);
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
-  background: linear-gradient(135deg, #22d3ee 0%, #3b82f6 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: gradientShift 3s ease infinite;
+.clearfix::after { content: ''; display: table; clear: both; }
+
+/* Buttons - base */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
-@keyframes gradientShift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+.btn:focus { outline: 3px solid rgba(99,102,241,0.18); outline-offset: 2px; }
+
+.btn-primary {
+  background: linear-gradient(90deg,var(--primary),var(--secondary));
+  color: white;
+  box-shadow: 0 8px 30px rgba(99,102,241,0.18);
 }
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.btn:hover { transform: translateY(-3px); }
+
+/* Navbar (used by Navbar.jsx) */
+.navbar,
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.8rem 1.25rem;
+  background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: 14px;
+  backdrop-filter: blur(6px);
+}
+
+.navbar .logo, .nav h1 { font-weight: 700; letter-spacing: -0.02em; }
+
+.navbar .nav-links,
+.nav .nav-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.navbar .nav-links li,
+.nav .nav-links a { list-style: none; color: var(--text); text-decoration: none; cursor: pointer; padding: 6px 10px; border-radius: 8px; }
+
+
+/* Cards default */
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+.card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(16,24,40,0.36); }
+
+/* Focus states for accessibility */
+a:focus, button:focus, input:focus, textarea:focus { outline: 3px solid rgba(34, 211, 238, 0.12); outline-offset: 2px; }
+
+/* Small helpers */
+.center { display: flex; align-items: center; justify-content: center; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-4 { margin-top: 1rem; }
+
+/* keep other page-specific styles in their files (e.g., src/styles/home.css) */
 
 h2 {
   font-size: clamp(1.75rem, 4vw, 3rem);
