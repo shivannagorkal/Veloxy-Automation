@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { CircleDot, ArrowRight, GitBranch, Zap, Rocket, Brain, ShieldCheck, Layers, Globe, Twitter, Instagram, Github, Linkedin, Menu, X } from "lucide-react";
+import { CircleDot, ArrowRight, GitBranch, Zap, SquareCode, Layers, Twitter, Instagram, Github, Linkedin, Menu, X } from "lucide-react";
 import "../styles/home.css";
 
 
@@ -45,18 +45,17 @@ export default function Home() {
       {/* HERO */}
       <section id="hero" className="hero reveal">
         <div className="text">
-        <h2 className="heading"> Learn to <span className="gradient-text">automate anything</span>  with expert-led courses</h2>
+        <h2 className="heading"> Learn Coding from  <span className="gradient-text">Zero to Hero, </span>  Practical. Beginner-Friendly.</h2>
         <p>
-          Master automation tools, AI workflows, and no-code platforms. 
-          From beginner to expert, learn the skills that companies are hiring for.
+          We are a passionate team helping students learn Python, C++, AI, and real-world projects in the easiest way possible.
         </p>
         <div className="hero-buttons">
           <button className="primary-btn">
-            Get started free →
+            ▶ Watch on YouTube →
           </button>
 
           <button className="secondary-btn">
-            ▶ Watch demo
+            👥 Join Our Community
           </button>
         </div>
         </div>
@@ -108,41 +107,63 @@ export default function Home() {
 
       <hr />
 
+      {/* About us8 */}
+      <section className="section reveal">
+        <h3 className="header">About Us</h3>
+        <p>We are a group of learners, creators, and future developers working together to make coding simple for everyone.</p>
+        <h2 className="heading">Our journey started with <span className="gradient-text"> one goal:</span></h2>
+        <p className="ml-6 mb-6">   👉 Help beginners who don’t know where to start in programming.</p>
+        <p>Through step-by-step lessons, daily practice problems, and real projects, we guide students from zero knowledge to real skills.</p>
+        <h4><b>Our Mission:</b></h4>
+        <p>To make <b>quality coding education free,</b> simple, and accessible to <b>every student.</b></p>
+        <h4><b>Our Vision:</b></h4>
+        <p>To build a strong community of <b>skilled developers and innovators</b> across India and beyond.</p>
+      </section>
+
+      <hr />
+
       {/* FEATURES */}
       <section id="Features" className="section reveal">
-        <h3 className="header">Features</h3>
-        <h2 className="heading">Learn once.<span className="gradient-text"> Automate forever.</span></h2>
-        <p>From simple workflows to managing AI and automation systems across your entire business.</p>
+        <h3 className="header">What We Teach</h3>
+        <h2 className="heading">What We Teach to Help <span className="gradient-text"> You Grow.</span></h2>
+        <p>Our learning content is designed especially for complete beginners who want to build strong programming skills step by step.
+        <br/>We focus on clear explanations, daily practice, and real-world projects so that every student can move from zero knowledge to real confidence in coding.</p>
         <div className="cards">
           <div className="card">
-            <div className="symbole s-1"><Rocket /></div>
-            <h4>Learn by Doings</h4>
-            <p>Build real automation projects from day one. Hands-on exercises and practical assignments that mirror real-world scenarios.</p>
+            <div className="symbole s-3">🐍</div>
+            <h4>Python Programming</h4>
+            <p>Learn Python from the very basics to advanced concepts in a simple and practical way.
+                We cover syntax, logic building, problem solving, and real mini-projects so you can start building applications with confidence.</p>
           </div>
           <div className="card">
-            <div className="symbole s-2"><Brain /></div>
-            <h4>Expert Instructors</h4>
-            <p>Learn from industry professionals with years of experience in automation and AI. Get insider tips and best practices.</p>
+            <div className="symbole s-2">🌐 </div>
+            <h4>Web Development</h4>
+            <p>Create modern, responsive websites using HTML, CSS, and JavaScript.
+                Learn how to design, build, and publish real websites and web projects.</p>
           </div>
           <div className="card">
-            <div className="symbole s-3"><ShieldCheck /></div>
-            <h4>Certification Programs</h4>
-            <p>Earn recognized certificates that prove your automation skills. Stand out in job applications and freelance platforms.</p>
+            <div className="symbole s-1"><SquareCode/></div>
+            <h4>C++ Fundamentals</h4>
+            <p>Understand the core foundation of programming through C++.
+                You will learn loops, conditions, arrays, functions, and problem-solving techniques that are useful for competitive programming and interviews.</p>
           </div>
           <div className="card">
-            <div className="symbole s-4"><Zap /></div>
-            <h4>Self-Paced Learning</h4>
-            <p>Study on your own schedule. Access courses 24/7 and learn at a pace that works for you.</p>
+            <div className="symbole s-5">🤖</div>
+            <h4>Artificial Intelligence (AI)</h4>
+            <p>Explore the world of AI, machine learning basics, and real-life applications.
+                Learn how intelligent systems work and how AI is shaping the future of technology.</p>
           </div>
           <div className="card">
-            <div className="symbole s-5"><Layers /></div>
-            <h4>Community Support</h4>
-            <p>Join thousands of learners. Get help from peers, share projects, and network with automation professionals.</p>
+            <div className="symbole s-4"><Layers /></div>
+            <h4>AI Tools & Productivity</h4>
+            <p>Discover powerful AI tools that help in coding, designing, writing, learning, and automation.
+                Understand how to use AI smartly to save time and increase productivity in studies and projects.</p>
           </div>
           <div className="card">
-            <div className="symbole s-6"><Globe /></div>
-            <h4>Lifetime Access</h4>
-            <p>Pay once, access forever. All course materials, updates, and new content included at no extra cost.</p>
+            <div className="symbole s-6">🚀 </div>
+            <h4>Real-World Projects</h4>
+            <p>Learning becomes powerful when you build something real.
+                We create beginner-friendly projects like calculators, chatbots, and mini AI apps to give you practical experience and portfolio-ready work.</p>
           </div>
           
         </div>
@@ -150,142 +171,149 @@ export default function Home() {
 
       <hr />
 
-      {/* APPLICATIONS */}
-      <section id="Applications" className="reveal">
-        <h3 className="header">Applications</h3>
-        <h2 className="heading">20+ tools & platforms. <span className="">Complete mastery.</span></h2>
-        <p>Master all major automation platforms and tools used by professionals worldwide.</p>
-
-        <div className="app-cards">
-          <div className="app-card">
-            <h4 className="app-1">n8n</h4>
-            <p>n8n</p>
-          </div>
-          <div className="app-card">
-            <h4 className="app-2">Za</h4>
-            <p>Zapier</p>
-          </div>
-          <div className="app-card">
-            <h4 className="app-3">Ma</h4>
-            <p>Make</p>
-          </div>
-          <div className="app-card">
-            <h4 className="app-4">Gs</h4>
-            <p>Google Sheets</p>
-          </div>
-          <div className="app-card">
-            <h4 className="app-5">Pa</h4>
-            <p>Power Automate</p>
-          </div>
-          <div className="app-card">
-            <h4 className="app-6">In</h4>
-            <p>Integromat</p>
-          </div>
-          <div className="app-card">
-            <h4 className="app-7">Ai</h4>
-            <p>ChatGpt</p>
-          </div>
-          <div className="app-card">
-            <h4 className="app-8">Py</h4>
-            <p>Python</p>
-          </div>
-          <div className="app-card">
-            <h4 className="app-9">Js</h4>
-            <p>JavaScript</p>
-          </div>
-          <div className="app-card">
-            <h4 className="app-10">Wh</h4>
-            <p>Webhooks</p>
-          </div>
-          <div className="app-card">
-            <h4 className="app-11">Ap</h4>
-            <p>APIs</p>
-          </div>
-          <div className="app-card">
-            <h4 className="app-12">At</h4>
-            <p>Airtable</p>
-          </div>
-          
-        </div>
-      </section>
-
-      <hr />
 
     {/*abuot instructors*/}
-    <section className="about-instructors">
-      <h3 className="header">About Instructors</h3>
-      <h2 className="heading">Learn from Industry Experts</h2>
+    <section className="section ">
+      <h3 className="header mb-10">👥 MEET OUR TEAM</h3>
+      <h2 className="heading text-3xl">We are a small but passionate team working together to create <span className="gradient-text"> powerful learning content.</span></h2>
       <p>Our instructors are seasoned professionals with years of experience in automation and no-code tools. They bring real-world insights and practical knowledge to help you master the art of automation.</p>
-      <div className="instructors-container overflow-hidden flex gap-10">
-      <div className="instructor-cards flex flex-row gap-10 p-10 pr-1 mr-0">
-        <div className="instructor-card">
-          <img src="https://randomuser.me/api/portraits/women/68.jpg" className="profile-pic" alt="Jane Doe" />
-          <h4>Jane Doe</h4>
-          <p>Automation Specialist with 10+ years in the industry.</p>
+      
+      <div className="team-roles mt-6 mb-6">
+        <h2 className="text-3xl text-center mb-5">Roles in our team include:</h2>
+        <div className="team-card">
+          <div className="category">
+            <h4 className="text-2xl font-bold">Programming Trainers.</h4>
+            <div className="instructors">
+              <img src="" alt="Instructor 1" className="pic" />
+              <div className="text-left mt-1 flex flex-col gap-0">
+                <p className="mb-0 text-lg font-bold">Name</p>
+                <p className="mt-0">He is a famous instructor</p>
+              </div>
+            </div>
+            <div className="instructors">
+              <img src="" alt="Instructor 1" className="pic" />
+              <div className="text-left mt-1 flex flex-col gap-0">
+                <p className="mb-0 text-lg font-bold">Name</p>
+                <p className="mt-0">He is a famous instructor</p>
+              </div>
+            </div>
+            <div className="instructors">
+              <img src="" alt="Instructor 1" className="pic" />
+              <div className="text-left mt-1 flex flex-col gap-0">
+                <p className="mb-0 text-lg font-bold">Name</p>
+                <p className="mt-0">He is a famous instructor</p>
+              </div>
+            </div>
+          </div>
+          <div className="category">
+            <h4 className="text-2xl font-bold">Project Developers.</h4>
+            <div className="instructors">
+              <img src="" alt="Instructor 1" className="pic" />
+              <div className="text-left mt-1 flex flex-col gap-0">
+                <p className="mb-0 text-lg font-bold">Name</p>
+                <p className="mt-0">He is a famous instructor</p>
+              </div>
+            </div>
+            <div className="instructors">
+              <img src="" alt="Instructor 1" className="pic" />
+              <div className="text-left mt-1 flex flex-col gap-0">
+                <p className="mb-0 text-lg font-bold">Name</p>
+                <p className="mt-0">He is a famous instructor</p>
+              </div>
+            </div>
+            <div className="instructors">
+              <img src="" alt="Instructor 1" className="pic" />
+              <div className="text-left mt-1 flex flex-col gap-0">
+                <p className="mb-0 text-lg font-bold">Name</p>
+                <p className="mt-0">He is a famous instructor</p>
+              </div>
+            </div>
+          </div>
+          <div className="category">
+            <h4 className="text-2xl font-bold">Designers & Editors.</h4>
+            <div className="instructors">
+              <img src="" alt="Instructor 1" className="pic" />
+              <div className="text-left mt-1 flex flex-col gap-0">
+                <p className="mb-0 text-lg font-bold">Name</p>
+                <p className="mt-0">He is a famous instructor</p>
+              </div>
+            </div>
+            <div className="instructors">
+              <img src="" alt="Instructor 1" className="pic" />
+              <div className="text-left mt-1 flex flex-col gap-0">
+                <p className="mb-0 text-lg font-bold">Name</p>
+                <p className="mt-0">He is a famous instructor</p>
+              </div>
+            </div>
+            <div className="instructors">
+              <img src="" alt="Instructor 1" className="pic" />
+              <div className="text-left mt-1 flex flex-col gap-0">
+                <p className="mb-0 text-lg font-bold">Name</p>
+                <p className="mt-0">He is a famous instructor</p>
+              </div>
+            </div>
+          </div>
+          <div className="category">
+            <h4 className="text-2xl font-bold">Community Support Members.</h4>
+            <div className="instructors">
+              <img src="" alt="Instructor 1" className="pic" />
+              <div className="text-left mt-1 flex flex-col gap-0">
+                <p className="mb-0 text-lg font-bold">Name</p>
+                <p className="mt-0">He is a famous instructor</p>
+              </div>
+            </div>
+            <div className="instructors">
+              <img src="" alt="Instructor 1" className="pic" />
+              <div className="text-left mt-1 flex flex-col gap-0">
+                <p className="mb-0 text-lg font-bold">Name</p>
+                <p className="mt-0">He is a famous instructor</p>
+              </div>
+            </div>
+            <div className="instructors">
+              <img src="" alt="Instructor 1" className="pic" />
+              <div className="text-left mt-1 flex flex-col gap-0">
+                <p className="mb-0 text-lg font-bold">Name</p>
+                <p className="mt-0">He is a famous instructor</p>
+              </div>
+            </div>
+          </div>
+          
         </div>
-        <div className="instructor-card">
-          <img src="https://randomuser.me/api/portraits/men/65.jpg" className="profile-pic" alt="John Smith" />
-          <h4>John Smith</h4>
-          <p>Senior Automation Engineer with enterprise experience.</p>
-        </div>
-        <div className="instructor-card">
-          <img src="https://randomuser.me/api/portraits/women/45.jpg" className="profile-pic" alt="Mary Green" />
-          <h4>Mary Green</h4>
-          <p>Automation Coach with a focus on no-code tools.</p>
-        </div>
-        <div className="instructor-card">
-          <img src="https://randomuser.me/api/portraits/women/68.jpg" className="profile-pic" alt="Jane Doe" />
-          <h4>Jane Doe</h4>
-          <p>Automation Specialist with 10+ years in the industry.</p>
-        </div>
-        <div className="instructor-card">
-          <img src="https://randomuser.me/api/portraits/men/65.jpg" className="profile-pic" alt="John Smith" />
-          <h4>John Smith</h4>
-          <p>Senior Automation Engineer with enterprise experience.</p>
-        </div>
-        <div className="instructor-card">
-          <img src="https://randomuser.me/api/portraits/women/45.jpg" className="profile-pic" alt="Mary Green" />
-          <h4>Mary Green</h4>
-          <p>Automation Coach with a focus on no-code tools.</p>
-        </div>
-      </div>
+      </div>  
+        
+      
 
-      <div className="instructor-cards flex flex-row gap-10 p-10 ml-0 pl-1">
-        <div className="instructor-card">
-          <img src="https://randomuser.me/api/portraits/women/68.jpg" className="profile-pic" alt="Jane Doe" />
-          <h4>Jane Doe</h4>
-          <p>Automation Specialist with 10+ years in the industry.</p>
-        </div>
-        <div className="instructor-card">
-          <img src="https://randomuser.me/api/portraits/men/65.jpg" className="profile-pic" alt="John Smith" />
-          <h4>John Smith</h4>
-          <p>Senior Automation Engineer with enterprise experience.</p>
-        </div>
-        <div className="instructor-card">
-          <img src="https://randomuser.me/api/portraits/women/45.jpg" className="profile-pic" alt="Mary Green" />
-          <h4>Mary Green</h4>
-          <p>Automation Coach with a focus on no-code tools.</p>
-        </div>
-        <div className="instructor-card">
-          <img src="https://randomuser.me/api/portraits/women/68.jpg" className="profile-pic" alt="Jane Doe" />
-          <h4>Jane Doe</h4>
-          <p>Automation Specialist with 10+ years in the industry.</p>
-        </div>
-        <div className="instructor-card">
-          <img src="https://randomuser.me/api/portraits/men/65.jpg" className="profile-pic" alt="John Smith" />
-          <h4>John Smith</h4>
-          <p>Senior Automation Engineer with enterprise experience.</p>
-        </div>
-        <div className="instructor-card">
-          <img src="https://randomuser.me/api/portraits/women/45.jpg" className="profile-pic" alt="Mary Green" />
-          <h4>Mary Green</h4>
-          <p>Automation Coach with a focus on no-code tools.</p>
-        </div>
-      </div>
-      </div>
-
+      <p>Together, we grow… and help others grow too.</p>
     </section>
+
     <hr />
+
+    {/* Community & Courses */}
+    <section className="section reveal">
+      <h3 className="header">Join Our Community</h3>
+      <h2 className="heading">Learning is better when we <span className="gradient-text"> learn together.</span></h2>
+      <p>Become part of our growing student community:</p>
+      <ul className="community-list">
+        <li>👨‍💻 Get daily coding questions</li>
+        <li>📚 Receive learning resources</li>
+        <li>👥 Connect with other learners</li>
+        <li>🚀 Stay motivated on your journey</li>
+      </ul>
+
+      <div className="flex row gap-20 mt-6">
+        <button className="primary-btn">
+          ▶ Join Our Whatsapp Channel
+        </button>
+
+        <button className="secondary-btn">
+          👥 Join Our Discord Community
+        </button>
+      </div>
+    </section>
+
+    <hr />
+
+
   {/* SPACER */}
   <section className="spacer">
     <div className="follow-us text-center">
