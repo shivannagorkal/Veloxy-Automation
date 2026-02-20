@@ -195,7 +195,7 @@ export default function Home() {
             </div>
 
             <div className="instructors">
-              <img src="/images/123.JPG" alt="Instructor 1" className="pic" />
+              <img src="/images/shivanna.jpg" alt="Instructor 1" className="pic" />
               <div className="text-left mt-1 flex flex-col gap-0">
                 <p className="mb-0 text-lg font-bold">Shivanna</p>
                 <p className="mt-0">B.Tech CSE in AI</p>
@@ -243,14 +243,14 @@ export default function Home() {
               </div>
             </div>
             <div className="instructors">
-              <img src="/images/dileep.JPG" alt="Instructor 1" className="pic" />
+              <img src="/images/dileep.jpg" alt="Instructor 1" className="pic" />
               <div className="text-left mt-1 flex flex-col gap-0">
                 <p className="mb-0 text-lg font-bold">Dileep</p>
                 <p className="mt-0">B.Tech CSE in AI</p>
               </div>
             </div>
             <div className="instructors">
-              <img src="" alt="Instructor 1" className="pic" />
+              <img src="/images/tarun.jpg" alt="Instructor 1" className="pic" />
               <div className="text-left mt-1 flex flex-col gap-0">
                 <p className="mb-0 text-lg font-bold">Tarun kumar K</p>
                 <p className="mt-0">B.Tech CSE in AI</p>
