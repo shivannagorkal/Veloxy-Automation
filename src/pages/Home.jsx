@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { CircleDot, ArrowRight, GitBranch, Zap, SquareCode, Layers, Twitter, Instagram, Github, Linkedin, Menu, X } from "lucide-react";
+import { CircleDot, ArrowRight, GitBranch, Zap, SquareCode,GitFork, Youtube, Twitter, Instagram, Linkedin, Menu, X } from "lucide-react";
 import "../styles/home.css";
 
 
@@ -30,14 +30,15 @@ export default function Home() {
     <div className="home">
       {/* NAVBAR */}
       <nav className="nav">
-        <h1>Veloxy Automation</h1>
+        <h1>Debug Dynamos</h1>
         <button className="nav-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu" aria-expanded={menuOpen} aria-controls="main-nav">
           {menuOpen ? <X /> : <Menu />}
         </button>
         <div id="main-nav" className={`nav-links ${menuOpen ? "active" : ""}` }>
           <a href="#hero" onClick={() => setMenuOpen(false)}>Home</a>
-          <a href="#Features" onClick={() => setMenuOpen(false)}>Features</a>
-          <a href="#Applications" onClick={() => setMenuOpen(false)}>Applications</a>
+          <a href="#AboutUs" onClick={() => setMenuOpen(false)}>About Us</a>
+          <a href="#Instructors" onClick={() => setMenuOpen(false)}>Our Team</a>
+          <a href="#community" onClick={() => setMenuOpen(false)}>Community</a>
           <a href="#contact" onClick={() => setMenuOpen(false)}>Support</a>
         </div>
       </nav>
@@ -50,13 +51,13 @@ export default function Home() {
           We are a passionate team helping students learn Python, C++, AI, and real-world projects in the easiest way possible.
         </p>
         <div className="hero-buttons">
-          <button className="primary-btn">
+          <a href="http://www.youtube.com/@DebugDynamosHQ"><button className="primary-btn">
             ▶ Watch on YouTube →
-          </button>
+          </button></a>
 
-          <button className="secondary-btn">
+          <a href="https://chat.whatsapp.com/BjmZkH49FB3Aor4n2H12pY"><button className="secondary-btn">
             👥 Join Our Community
-          </button>
+          </button></a>
         </div>
         </div>
         {/* Visual Preview */} 
@@ -108,7 +109,7 @@ export default function Home() {
       <hr />
 
       {/* About us8 */}
-      <section className="section reveal">
+      <section id="AboutUs" className="section reveal">
         <h3 className="header">About Us</h3>
         <p>We are a group of learners, creators, and future developers working together to make coding simple for everyone.</p>
         <h2 className="heading">Our journey started with <span className="gradient-text"> one goal:</span></h2>
@@ -123,7 +124,7 @@ export default function Home() {
       <hr />
 
       {/* FEATURES */}
-      <section id="Features" className="section reveal">
+      <section className="section reveal">
         <h3 className="header">What We Teach</h3>
         <h2 className="heading">What We Teach to Help <span className="gradient-text"> You Grow.</span></h2>
         <p>Our learning content is designed especially for complete beginners who want to build strong programming skills step by step.
@@ -148,13 +149,14 @@ export default function Home() {
                 You will learn loops, conditions, arrays, functions, and problem-solving techniques that are useful for competitive programming and interviews.</p>
           </div>
           <div className="card">
-            <div className="symbole s-5">🤖</div>
-            <h4>Artificial Intelligence (AI)</h4>
-            <p>Explore the world of AI, machine learning basics, and real-life applications.
-                Learn how intelligent systems work and how AI is shaping the future of technology.</p>
+            <div className="symbole s-5"><GitFork className="rotate-90 size-10"/>
+            </div>
+            <h4>Automation</h4>
+            <p>Learn how to automate real-world tasks using n8n, a powerful workflow automation tool.
+                We teach you how to connect apps, create smart workflows, and save time by building no-code and low-code automations for everyday problems and business needs.</p>
           </div>
           <div className="card">
-            <div className="symbole s-4"><Layers /></div>
+            <div className="symbole s-4">🤖</div>
             <h4>AI Tools & Productivity</h4>
             <p>Discover powerful AI tools that help in coding, designing, writing, learning, and automation.
                 Understand how to use AI smartly to save time and increase productivity in studies and projects.</p>
@@ -173,7 +175,7 @@ export default function Home() {
 
 
     {/*abuot instructors*/}
-    <section className="section ">
+    <section id="Instructors" className="section reveal">
       <h3 className="header mb-10">👥 MEET OUR TEAM</h3>
       <h2 className="heading text-3xl">We are a small but passionate team working together to create <span className="gradient-text"> powerful learning content.</span></h2>
       <p>Our instructors are seasoned professionals with years of experience in automation and no-code tools. They bring real-world insights and practical knowledge to help you master the art of automation.</p>
@@ -183,97 +185,99 @@ export default function Home() {
         <div className="team-card">
           <div className="category">
             <h4 className="text-2xl font-bold">Programming Trainers.</h4>
+
+            <div className="instructors">
+              <img src="" alt="Instructor 1" className="pic" />
+              <div className="text-left mt-2 flex flex-col gap-0">
+                <p className="mb-0 text-lg font-bold">Dhanush BM</p>
+                <p className="mt-0">B.Tech CSE in AI</p>
+              </div>
+            </div>
+
+            <div className="instructors">
+              <img src="/images/123.JPG" alt="Instructor 1" className="pic" />
+              <div className="text-left mt-1 flex flex-col gap-0">
+                <p className="mb-0 text-lg font-bold">Shivanna</p>
+                <p className="mt-0">B.Tech CSE in AI</p>
+              </div>
+            </div>
+            
             <div className="instructors">
               <img src="" alt="Instructor 1" className="pic" />
               <div className="text-left mt-1 flex flex-col gap-0">
-                <p className="mb-0 text-lg font-bold">Name</p>
-                <p className="mt-0">He is a famous instructor</p>
+                <p className="mb-0 text-lg font-bold">Sachinkumar</p>
+                <p className="mt-0">B.Tech CSE in AI</p>
+              </div>
+            </div>
+          
+            <div className="instructors">
+              <img src="" alt="Instructor 1" className="pic" />
+              <div className="text-left mt-1 flex flex-col gap-0">
+                <p className="mb-0 text-lg font-bold">Athman TK</p>
+                <p className="mt-0">B.Tech CSE in AI</p>
               </div>
             </div>
             <div className="instructors">
               <img src="" alt="Instructor 1" className="pic" />
               <div className="text-left mt-1 flex flex-col gap-0">
-                <p className="mb-0 text-lg font-bold">Name</p>
-                <p className="mt-0">He is a famous instructor</p>
-              </div>
-            </div>
-            <div className="instructors">
-              <img src="" alt="Instructor 1" className="pic" />
-              <div className="text-left mt-1 flex flex-col gap-0">
-                <p className="mb-0 text-lg font-bold">Name</p>
-                <p className="mt-0">He is a famous instructor</p>
-              </div>
-            </div>
-          </div>
-          <div className="category">
-            <h4 className="text-2xl font-bold">Project Developers.</h4>
-            <div className="instructors">
-              <img src="" alt="Instructor 1" className="pic" />
-              <div className="text-left mt-1 flex flex-col gap-0">
-                <p className="mb-0 text-lg font-bold">Name</p>
-                <p className="mt-0">He is a famous instructor</p>
-              </div>
-            </div>
-            <div className="instructors">
-              <img src="" alt="Instructor 1" className="pic" />
-              <div className="text-left mt-1 flex flex-col gap-0">
-                <p className="mb-0 text-lg font-bold">Name</p>
-                <p className="mt-0">He is a famous instructor</p>
-              </div>
-            </div>
-            <div className="instructors">
-              <img src="" alt="Instructor 1" className="pic" />
-              <div className="text-left mt-1 flex flex-col gap-0">
-                <p className="mb-0 text-lg font-bold">Name</p>
-                <p className="mt-0">He is a famous instructor</p>
+                <p className="mb-0 text-lg font-bold">Hemanth</p>
+                <p className="mt-0">B.Tech CSE in SE</p>
               </div>
             </div>
           </div>
+          
           <div className="category">
             <h4 className="text-2xl font-bold">Designers & Editors.</h4>
             <div className="instructors">
               <img src="" alt="Instructor 1" className="pic" />
               <div className="text-left mt-1 flex flex-col gap-0">
-                <p className="mb-0 text-lg font-bold">Name</p>
-                <p className="mt-0">He is a famous instructor</p>
+                <p className="mb-0 text-lg font-bold">Ravi Shankar</p>
+                <p className="mt-0">B.Tech CSE in AI</p>
               </div>
             </div>
             <div className="instructors">
               <img src="" alt="Instructor 1" className="pic" />
               <div className="text-left mt-1 flex flex-col gap-0">
-                <p className="mb-0 text-lg font-bold">Name</p>
-                <p className="mt-0">He is a famous instructor</p>
+                <p className="mb-0 text-lg font-bold">Uday KS</p>
+                <p className="mt-0">B.Tech CSE in AI</p>
               </div>
             </div>
             <div className="instructors">
               <img src="" alt="Instructor 1" className="pic" />
               <div className="text-left mt-1 flex flex-col gap-0">
-                <p className="mb-0 text-lg font-bold">Name</p>
-                <p className="mt-0">He is a famous instructor</p>
+                <p className="mb-0 text-lg font-bold">Dileep</p>
+                <p className="mt-0">B.Tech CSE in AI</p>
+              </div>
+            </div>
+            <div className="instructors">
+              <img src="" alt="Instructor 1" className="pic" />
+              <div className="text-left mt-1 flex flex-col gap-0">
+                <p className="mb-0 text-lg font-bold">Tarun kumar K</p>
+                <p className="mt-0">B.Tech CSE in AI</p>
               </div>
             </div>
           </div>
           <div className="category">
-            <h4 className="text-2xl font-bold">Community Support Members.</h4>
+            <h4 className="text-2xl font-bold">Community Supportors.</h4>
             <div className="instructors">
               <img src="" alt="Instructor 1" className="pic" />
               <div className="text-left mt-1 flex flex-col gap-0">
-                <p className="mb-0 text-lg font-bold">Name</p>
-                <p className="mt-0">He is a famous instructor</p>
+                <p className="mb-0 text-lg font-bold">Tilak</p>
+                <p className="mt-0">B.Tech in AIML</p>
               </div>
             </div>
             <div className="instructors">
               <img src="" alt="Instructor 1" className="pic" />
               <div className="text-left mt-1 flex flex-col gap-0">
-                <p className="mb-0 text-lg font-bold">Name</p>
-                <p className="mt-0">He is a famous instructor</p>
+                <p className="mb-0 text-lg font-bold">Sujith</p>
+                <p className="mt-0">B.Tech CSE in AI</p>
               </div>
             </div>
             <div className="instructors">
               <img src="" alt="Instructor 1" className="pic" />
               <div className="text-left mt-1 flex flex-col gap-0">
-                <p className="mb-0 text-lg font-bold">Name</p>
-                <p className="mt-0">He is a famous instructor</p>
+                <p className="mb-0 text-lg font-bold">Veeresh</p>
+                <p className="mt-0">B.Tech CSE in AI</p>
               </div>
             </div>
           </div>
@@ -289,7 +293,7 @@ export default function Home() {
     <hr />
 
     {/* Community & Courses */}
-    <section className="section reveal">
+    <section id="community" className="section reveal">
       <h3 className="header">Join Our Community</h3>
       <h2 className="heading">Learning is better when we <span className="gradient-text"> learn together.</span></h2>
       <p>Become part of our growing student community:</p>
@@ -300,14 +304,14 @@ export default function Home() {
         <li>🚀 Stay motivated on your journey</li>
       </ul>
 
-      <div className="flex row gap-20 mt-6">
-        <button className="primary-btn">
+      <div className="community-buttons mt-6">
+        <a href="https://whatsapp.com/channel/0029Vb7zYPN05MUVceADMD2Q"><button className="primary-btn ml-3 mr-3 md-mr-10">
           ▶ Join Our Whatsapp Channel
-        </button>
+        </button></a>
 
-        <button className="secondary-btn">
-          👥 Join Our Discord Community
-        </button>
+        <a href="https://chat.whatsapp.com/BjmZkH49FB3Aor4n2H12pY"><button className="secondary-btn ml-3 mr-3">
+          👥 Join Our Whatsapp Community
+        </button></a>
       </div>
     </section>
 
@@ -317,16 +321,17 @@ export default function Home() {
   {/* SPACER */}
   <section className="spacer">
     <div className="follow-us text-center">
-      <h1 className="header">Veloxy-Automation</h1>
-      <p>Learn automation from industry experts.
-         Master no-code tools, AI workflows, and 
-         turn your skills into a career.
+      <h1 className="header">Debug Dynamos</h1>
+      <p>Our support team is always here to help you on your learning journey. 
+        Whether you have questions about our tutorials, projects, or community, feel free to reach out anytime. 
+        We aim to respond quickly and guide you with clear and helpful solutions so you can continue learning without interruption.
       </p>
       <div className="follow-us-buttons flex items-center justify-center gap-4 mt-4">
+        <a href="http://www.youtube.com/@DebugDynamosHQ" type="button" className="follow-btn"><Youtube /></a> 
         <a href="#hero" type="button" className="follow-btn"><Twitter /></a> 
         <a href="#hero" type="button" className="follow-btn"><Instagram /></a> 
-        <a href="#hero" type="button" className="follow-btn"><Github /></a> 
         <a href="#hero" type="button" className="follow-btn"><Linkedin /></a> 
+        
       </div>
     </div>
     <div className="courses">
@@ -357,19 +362,19 @@ export default function Home() {
         <li>Blog</li>
         <li>Tutorials</li>
         <li>Templates</li>
-        <li>Community</li>
-        <li>YouTube</li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="http://www.youtube.com/@DebugDynamosHQ">YouTube</a></li>
         <li>Success Stories</li>
       </ul>
     </div>
     <div className="courses">
       <h4 className="head">Company</h4>
       <ul>
-        <li>About</li>
+        <li><a href="#AboutUs">About</a></li>
         <li>Instructors</li>  
         <li>Pricing</li>
         <li>Reviews</li>
-        <li>Contact</li>
+        <li><a href="#contact">Contact</a></li>
         <li>Affiliate Program</li>
       </ul>
     </div>
