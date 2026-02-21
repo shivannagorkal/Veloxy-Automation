@@ -401,7 +401,7 @@ export default function Home() {
 <hr />
       {/* FOOTER */}
       <footer id="contact" className="footer">
-        <p>© 2025 Veloxy Automation. All rights reserved.</p>
+        <p>© Debug Dynamos. All the best debugers.</p>
       </footer>
     </div>
   );
