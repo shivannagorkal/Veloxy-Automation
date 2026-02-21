@@ -659,7 +659,6 @@
 }
 
 .divider {
-  border-left: 2px solid rgba(255, 255, 255, 0.1);
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -766,9 +765,7 @@ hr {
   .divider {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
-    justify-content: space-around;
+    gap: 30px;
   }
   
 }
