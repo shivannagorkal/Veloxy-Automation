@@ -198,7 +198,6 @@ export default function Home() {
       
       <div className="team-roles mt-6 mb-6">
         <h2 className="text-3xl text-center mb-5">Roles in our team include:</h2>
-        <marquee direction="right">
         <div className="team-card">
           <div className="category">
             <h4 className="text-2xl font-bold">Programming Trainers.</h4>
@@ -300,7 +299,6 @@ export default function Home() {
           </div>
           
         </div>
-        </marquee>
       </div>  
         
       
