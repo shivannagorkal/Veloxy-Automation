@@ -657,6 +657,16 @@
   transform: translateY(-3px);
   box-shadow: 0 20px 40px rgba(99,102,241,0.6);
 }
+
+.divider {
+  border-left: 2px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .courses{
   margin-left: 20px;
   color: rgba(244, 243, 243, 0.6);
@@ -664,7 +674,8 @@
   margin-left: 20px;
   margin-top: 20px;
   list-style-type: none;
-  margin: 40px auto;
+  justify-self: center;
+  
 }
 .courses h4{
   color: white;
@@ -749,6 +760,10 @@ hr {
   .spacer {
     flex-direction: column;
     text-align: center;
+  }
+
+  .follow-us {
+    width: 100%;
   }
 }
 

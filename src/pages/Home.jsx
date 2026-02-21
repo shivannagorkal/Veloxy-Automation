@@ -335,7 +335,7 @@ export default function Home() {
 
 
   {/* SPACER */}
-  <section className="spacer">
+  <section className="section spacer">
     <div className="follow-us text-center">
       <h1 className="header">Debug Dynamos</h1>
       <p>Our support team is always here to help you on your learning journey. 
@@ -350,7 +350,8 @@ export default function Home() {
         
       </div>
     </div>
-    <div className="courses">
+    <div className="divider flex col md-flex-row content-space-around">
+    <div className="courses ml-[50px]">
       <h4 className="head">Courses</h4>
       <ul>
         <li>All Courses</li>
@@ -393,6 +394,7 @@ export default function Home() {
         <li><a href="#contact">Contact</a></li>
         <li>Affiliate Program</li>
       </ul>
+    </div>
     </div>
   </section>
 
