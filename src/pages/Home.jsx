@@ -68,11 +68,27 @@ export default function Home() {
             </div>
         
             <div className="preview-canvas">
+              <svg
+                className="vakra-svg"
+                viewBox="-40 30 500 200"
+                preserveAspectRatio="xMidYMid meet"
+              >
+                {/* Line 1: Upper wave - Gold */}
+                <path
+                  className="wave-line line1"
+                  strokeDasharray="900"
+                  d="M 10 60
+                     C 60 30, 130 200, 170 150
+                     C 200 130, 240 195, 295 220
+                     C 335 240, 360 60, 380 100"
+                />
+              </svg>
+              
               <div className="node node-trigger">
-              <div className="green">
-                <CircleDot />
-              </div>
-              <p>Trigger</p>
+                <div className="green">
+                  <CircleDot />
+                </div> 
+                <p>Trigger</p>
               </div>
               <span className="dot-node dot-green"></span>
               <div className="node node-ai">
@@ -187,7 +203,7 @@ export default function Home() {
             <h4 className="text-2xl font-bold">Programming Trainers.</h4>
 
             <div className="instructors">
-              <img src="" alt="Instructor 1" className="pic" />
+              <img src="/images/dhanush.jpg" alt="Instructor 1" className="pic" />
               <div className="text-left mt-2 flex flex-col gap-0">
                 <p className="mb-0 text-lg font-bold">Dhanush BM</p>
                 <p className="mt-0">B.Tech CSE in AI</p>
@@ -203,7 +219,7 @@ export default function Home() {
             </div>
             
             <div className="instructors">
-              <img src="" alt="Instructor 1" className="pic" />
+              <img src="/images/sachinkumar.jpg" alt="Instructor 1" className="pic" />
               <div className="text-left mt-1 flex flex-col gap-0">
                 <p className="mb-0 text-lg font-bold">Sachinkumar</p>
                 <p className="mt-0">B.Tech CSE in AI</p>
@@ -211,14 +227,14 @@ export default function Home() {
             </div>
           
             <div className="instructors">
-              <img src="" alt="Instructor 1" className="pic" />
+              <img src="/images/athman.jpg" alt="Instructor 1" className="pic" />
               <div className="text-left mt-1 flex flex-col gap-0">
                 <p className="mb-0 text-lg font-bold">Athman TK</p>
                 <p className="mt-0">B.Tech CSE in AI</p>
               </div>
             </div>
             <div className="instructors">
-              <img src="" alt="Instructor 1" className="pic" />
+              <img src="/images/hemanth.jpg" alt="Instructor 1" className="pic" />
               <div className="text-left mt-1 flex flex-col gap-0">
                 <p className="mb-0 text-lg font-bold">Hemanth</p>
                 <p className="mt-0">B.Tech CSE in SE</p>
@@ -229,14 +245,14 @@ export default function Home() {
           <div className="category">
             <h4 className="text-2xl font-bold">Designers & Editors.</h4>
             <div className="instructors">
-              <img src="" alt="Instructor 1" className="pic" />
+              <img src="/images/ravishankar.jpg" alt="Instructor 1" className="pic" />
               <div className="text-left mt-1 flex flex-col gap-0">
                 <p className="mb-0 text-lg font-bold">Ravi Shankar</p>
                 <p className="mt-0">B.Tech CSE in AI</p>
               </div>
             </div>
             <div className="instructors">
-              <img src="" alt="Instructor 1" className="pic" />
+              <img src="/images/uday.jpg" alt="Instructor 1" className="pic" />
               <div className="text-left mt-1 flex flex-col gap-0">
                 <p className="mb-0 text-lg font-bold">Uday KS</p>
                 <p className="mt-0">B.Tech CSE in AI</p>
@@ -260,21 +276,21 @@ export default function Home() {
           <div className="category">
             <h4 className="text-2xl font-bold">Community Supportors.</h4>
             <div className="instructors">
-              <img src="" alt="Instructor 1" className="pic" />
+              <img src="/images/tilak.jpg" alt="Instructor 1" className="pic" />
               <div className="text-left mt-1 flex flex-col gap-0">
                 <p className="mb-0 text-lg font-bold">Tilak</p>
                 <p className="mt-0">B.Tech in AIML</p>
               </div>
             </div>
             <div className="instructors">
-              <img src="" alt="Instructor 1" className="pic" />
+              <img src="/images/sujith.jpg" alt="Instructor 1" className="pic" />
               <div className="text-left mt-1 flex flex-col gap-0">
                 <p className="mb-0 text-lg font-bold">Sujith</p>
                 <p className="mt-0">B.Tech CSE in AI</p>
               </div>
             </div>
             <div className="instructors">
-              <img src="" alt="Instructor 1" className="pic" />
+              <img src="/images/veeresh.jpg" alt="Instructor 1" className="pic" />
               <div className="text-left mt-1 flex flex-col gap-0">
                 <p className="mb-0 text-lg font-bold">Veeresh</p>
                 <p className="mt-0">B.Tech CSE in AI</p>
