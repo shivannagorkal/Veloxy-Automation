@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { CircleDot, ArrowRight, GitBranch, Zap, SquareCode,GitFork, Youtube, Twitter, Instagram, Linkedin, Menu, X } from "lucide-react";
 import "../styles/home.css";
-
+import Cards from "../components/cards";
 
 export default function Home() {
   useEffect(() => {
@@ -27,6 +27,7 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
+    <>
     <div className="home">
       {/* NAVBAR */}
       <nav className="nav">
@@ -188,7 +189,7 @@ export default function Home() {
       </section>
 
       <hr />
-
+      <hr />
 
     {/*abuot instructors*/}
     <section id="Instructors" className="section reveal">
@@ -198,116 +199,7 @@ export default function Home() {
       
       <div className="team-roles mt-6 mb-6">
         <h2 className="text-3xl text-center mb-5">Roles in our team include:</h2>
-        <div className="team-card">
-          <div className="category">
-            <h4 className="text-2xl font-bold">Programming Trainers.</h4>
-
-            <div className="instructors">
-              <img src="/images/dhanush.jpg" alt="Instructor 1" className="pic" />
-              <div className="text-left mt-2 flex flex-col gap-0">
-                <p className="mb-0 text-lg font-bold">Dhanush BM</p>
-                <p className="mt-0">B.Tech CSE in AI</p>
-              </div>
-            </div>
-
-            <div className="instructors">
-              <img src="/images/shivanna.jpg" alt="Instructor 1" className="pic" />
-              <div className="text-left mt-1 flex flex-col gap-0">
-                <p className="mb-0 text-lg font-bold">Shivanna</p>
-                <p className="mt-0">B.Tech CSE in AI</p>
-              </div>
-            </div>
-            
-            <div className="instructors">
-              <img src="/images/sachinkumar.jpg" alt="Instructor 1" className="pic" />
-              <div className="text-left mt-1 flex flex-col gap-0">
-                <p className="mb-0 text-lg font-bold">Sachinkumar</p>
-                <p className="mt-0">B.Tech CSE in AI</p>
-              </div>
-            </div>
-          
-            <div className="instructors">
-              <img src="/images/athman.jpg" alt="Instructor 1" className="pic" />
-              <div className="text-left mt-1 flex flex-col gap-0">
-                <p className="mb-0 text-lg font-bold">Athman TK</p>
-                <p className="mt-0">B.Tech CSE in AI</p>
-              </div>
-            </div>
-
-            <div className="instructors">
-              <img src="/images/sangam.jpg" alt="Instructor 1" className="pic" />
-              <div className="text-left mt-1 flex flex-col gap-0">
-                <p className="mb-0 text-lg font-bold">Sangam JK</p>
-                <p className="mt-0">B.Tech CSE in AI</p>
-              </div>
-            </div>
-            
-            <div className="instructors">
-              <img src="/images/hemanth.jpg" alt="Instructor 1" className="pic" />
-              <div className="text-left mt-1 flex flex-col gap-0">
-                <p className="mb-0 text-lg font-bold">Hemanth</p>
-                <p className="mt-0">B.Tech CSE in SE</p>
-              </div>
-            </div>
-          </div>
-          
-          <div className="category">
-            <h4 className="text-2xl font-bold">Designers & Editors.</h4>
-            <div className="instructors">
-              <img src="/images/ravishankar.jpg" alt="Instructor 1" className="pic" />
-              <div className="text-left mt-1 flex flex-col gap-0">
-                <p className="mb-0 text-lg font-bold">Ravi Shankar</p>
-                <p className="mt-0">B.Tech CSE in AI</p>
-              </div>
-            </div>
-            <div className="instructors">
-              <img src="/images/uday.jpg" alt="Instructor 1" className="pic" />
-              <div className="text-left mt-1 flex flex-col gap-0">
-                <p className="mb-0 text-lg font-bold">Uday KS</p>
-                <p className="mt-0">B.Tech CSE in AI</p>
-              </div>
-            </div>
-            <div className="instructors">
-              <img src="/images/dileep.jpg" alt="Instructor 1" className="pic" />
-              <div className="text-left mt-1 flex flex-col gap-0">
-                <p className="mb-0 text-lg font-bold">Dileep</p>
-                <p className="mt-0">B.Tech CSE in AI</p>
-              </div>
-            </div>
-            <div className="instructors">
-              <img src="/images/tarun.jpg" alt="Instructor 1" className="pic" />
-              <div className="text-left mt-1 flex flex-col gap-0">
-                <p className="mb-0 text-lg font-bold">Tarun kumar K</p>
-                <p className="mt-0">B.Tech CSE in AI</p>
-              </div>
-            </div>
-          </div>
-          <div className="category">
-            <h4 className="text-2xl font-bold">Community Supportors.</h4>
-            <div className="instructors">
-              <img src="/images/tilak.jpg" alt="Instructor 1" className="pic" />
-              <div className="text-left mt-1 flex flex-col gap-0">
-                <p className="mb-0 text-lg font-bold">Tilak</p>
-                <p className="mt-0">B.Tech in AIML</p>
-              </div>
-            </div>
-            <div className="instructors">
-              <img src="/images/sujith.jpg" alt="Instructor 1" className="pic" />
-              <div className="text-left mt-1 flex flex-col gap-0">
-                <p className="mb-0 text-lg font-bold">Sujith</p>
-                <p className="mt-0">B.Tech CSE in AI</p>
-              </div>
-            </div>
-            <div className="instructors">
-              <img src="/images/veeresh.jpg" alt="Instructor 1" className="pic" />
-              <div className="text-left mt-1 flex flex-col gap-0">
-                <p className="mb-0 text-lg font-bold">Veeresh</p>
-                <p className="mt-0">B.Tech CSE in AI</p>
-              </div>
-            </div>
-          </div>
-          
-        </div>
+        <Cards/>
       </div>  
         
       
@@ -408,10 +300,10 @@ export default function Home() {
   </section>
 
 <hr />
-      {/* FOOTER */}
-      <footer id="contact" className="footer">
-        <p>© Debug Dynamos. All the best debugers.</p>
-      </footer>
+    
+      
     </div>
+
+  </>
   );
 }
