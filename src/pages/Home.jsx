@@ -233,6 +233,15 @@ export default function Home() {
                 <p className="mt-0">B.Tech CSE in AI</p>
               </div>
             </div>
+
+            <div className="instructors">
+              <img src="/images/sangam.jpg" alt="Instructor 1" className="pic" />
+              <div className="text-left mt-1 flex flex-col gap-0">
+                <p className="mb-0 text-lg font-bold">Sangam JK</p>
+                <p className="mt-0">B.Tech CSE in AI</p>
+              </div>
+            </div>
+            
             <div className="instructors">
               <img src="/images/hemanth.jpg" alt="Instructor 1" className="pic" />
               <div className="text-left mt-1 flex flex-col gap-0">
