@@ -545,56 +545,6 @@
   width: 100%;
 }
 
-.category {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  margin-right: 10px;
-}
-
-.category h4 {
-  font-size: 23px;
-  font-weight: 600;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  background: linear-gradient(90deg, rgba(99,102,241,0.8), rgba(236,72,153,0.8));
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.instructors {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-self: center;
-  gap: 10px;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  background-color: rgba(43, 61, 78, 0.685);
-  margin-bottom: 12px;
-  box-shadow: 0 10px 20px rgba(99,102,241,0.055);
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.instructors:hover {
-  outline: 1px solid rgba(129, 232, 45, 0.959);
-  outline-width: 1px;
-  box-shadow: 0 20px 40px rgba(102, 140, 223, 0.537);
-  transform: translateY(-4px) scale(1.02);
-}
-
-.pic {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background-color: #ccc;
-}
 
 /* Community & courses section */
 .community-buttons {
@@ -696,14 +646,6 @@
   transform: translateY(-3px);
 }
 
-/* FOOTER */
-.footer {
-  padding: 32px;
-  text-align: center;
-  color: #777;
-  font-size: 14px;
-  background-color: rgba(11, 16, 32, 0.8);
-}
 
 hr {
   border: none;

@@ -18,16 +18,11 @@ const row2Profiles = [
   { id: 8, name: "Dileep",  course: "B.Tech CSE in AI",  img: "./images/dileep.jpg",   color: "#7209B7" },
   { id: 9, name: "Ravi Shankar",     course: "B.Tech CSE in AI",      img: "./images/ravishankar.jpg",    color: "#3A86FF" },
   { id: 10, name: "Tarun Kumar",   course: "B.Tech CSE in AI",    img: "./images/tarun.jpg",  color: "#06D6A0" },
+  { id: 11, name: "Sujith",   course: "B.Tech CSE in AI",    img: "./images/sujith.jpg",  color: "#6C63FF" },
+  { id: 12, name: "Veeresh",   course: "B.Tech CSE in AI",    img: "./images/veeresh.jpg",  color: "#FF8C42" },
+  { id: 13, name: "Tilak",   course: "B.Tech CSE in AI",    img: "./images/tilak.jpg",  color: "#2ECC71" },
 ];
 
-// ── Row 3 data (scrolls LEFT) ──
-const row3Profiles = [
-  { id: 11, name: "Elena Petrova", course: "Robotics Engineering",img: "https://api.dicebear.com/7.x/personas/svg?seed=Elena",   color: "#43AA8B" },
-  { id: 12, name: "Aiden Murphy",  course: "Bioinformatics",      img: "https://api.dicebear.com/7.x/personas/svg?seed=Aiden",   color: "#F94144" },
-  { id: 13, name: "Zara Khan",     course: "Digital Marketing",   img: "https://api.dicebear.com/7.x/personas/svg?seed=Zara",    color: "#577590" },
-  { id: 14, name: "Jin Wei",       course: "Computer Vision",     img: "https://api.dicebear.com/7.x/personas/svg?seed=Jin",     color: "#F3722C" },
-  { id: 21, name: "Isla Mackenzie",course: "UX Research",         img: "https://api.dicebear.com/7.x/personas/svg?seed=Isla",    color: "#90BE6D" },
-];
 
 // ── Single Card ──
 function Card({ profile }) {
@@ -85,14 +80,14 @@ export default function Cards() {
   return (
     <>
     <div>
+
+      <h3 className="headder">Programing Trainers</h3>
       {/* Row 1 — scrolls LEFT */}
       <ScrollRow profiles={row1Profiles} direction="left" />
-
+      <h3 className="headder">Editers and Supporters</h3>
       {/* Row 2 — scrolls RIGHT */}
       <ScrollRow profiles={row2Profiles} direction="right" />
 
-      {/* Row 3 — scrolls LEFT */}
-      <ScrollRow profiles={row3Profiles} direction="left" />
     </div>
     </>
   );
