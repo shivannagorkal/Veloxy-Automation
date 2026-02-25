@@ -263,7 +263,7 @@ export default function Home() {
         <li>Free Courses</li>
       </ul>
     </div>
-    <div className="courses mr-[50px]">
+    <div className="courses mr-[30px]">
       <h4 className="head">Learning Paths</h4>
       <ul>
         <li>No-Code Tools</li>
@@ -285,7 +285,7 @@ export default function Home() {
         <li>Success Stories</li>
       </ul>
     </div>
-    <div className="courses mr-[50px]">
+    <div className="courses mr-[30px]">
       <h4 className="head">Company</h4>
       <ul>
         <li><a href="#AboutUs">About</a></li>
