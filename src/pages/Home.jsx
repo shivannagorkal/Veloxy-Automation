@@ -246,7 +246,7 @@ export default function Home() {
       <div className="follow-us-buttons flex items-center justify-center gap-4 mt-4">
         <a href="http://www.youtube.com/@DebugDynamosHQ" type="button" className="follow-btn"><Youtube /></a> 
         <a href="#hero" type="button" className="follow-btn"><Twitter /></a> 
-        <a href="#hero" type="button" className="follow-btn"><Instagram /></a> 
+        <a href="https://www.instagram.com/debug.dynamos/" type="button" className="follow-btn"><Instagram /></a> 
         <a href="#hero" type="button" className="follow-btn"><Linkedin /></a> 
         
       </div>
