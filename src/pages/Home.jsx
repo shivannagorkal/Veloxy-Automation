@@ -252,7 +252,7 @@ export default function Home() {
       </div>
     </div>
     <div className="divider flex col md-flex-row content-space-around">
-    <div className="courses ml-[50px]">
+    <div className="courses ml-[25px]">
       <h4 className="head">Courses</h4>
       <ul>
         <li>All Courses</li>
@@ -263,7 +263,7 @@ export default function Home() {
         <li>Free Courses</li>
       </ul>
     </div>
-    <div className="courses mr-[30px]">
+    <div className="courses mr-[25px]">
       <h4 className="head">Learning Paths</h4>
       <ul>
         <li>No-Code Tools</li>
@@ -274,7 +274,7 @@ export default function Home() {
         <li>Freelancing</li>
       </ul>
     </div>
-    <div className="courses">
+    <div className="courses ml-[25px]">
       <h4 className="head">Resources</h4>
       <ul>
         <li>Blog</li>
@@ -285,7 +285,7 @@ export default function Home() {
         <li>Success Stories</li>
       </ul>
     </div>
-    <div className="courses mr-[30px]">
+    <div className="courses mr-[25px]">
       <h4 className="head">Company</h4>
       <ul>
         <li><a href="#AboutUs">About</a></li>
