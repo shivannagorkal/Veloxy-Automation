@@ -236,7 +236,7 @@ export default function Home() {
 
 
   {/* SPACER */}
-  <section className="section spacer">
+  <section id="contact" className="section spacer">
     <div className="follow-us text-center">
       <h1 className="header">Debug Dynamos</h1>
       <p>Our support team is always here to help you on your learning journey. 
